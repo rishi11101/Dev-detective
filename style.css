@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', 'sans-serif';
+    text-decoration: none;
+}
+
+a{
+    color: var(--link);
+}
+
+:root{
+    --bodyBg : #F6F8FF;
+    --containerBg : white;
+    --repoSection : white;
+    --text : #2B3442;
+    --text2 : #697C9A;
+    --link : #0079FF;
+}
+
+/* .dark{
+    --bodyBg : #141D2F;
+    --containerBg : #1E2A47;
+    --repoSection : #141D2F;
+    --text : white;
+    --text2 : rgb(222, 222, 222);
+} */
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--bodyBg);
+}
+
+.container{
+    height: 100vh;
+    width: 44vw;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: var(--text);
+}
+
+.header{
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mode-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.light, .dark{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #697C9A;
+    text-transform: uppercase;
+    display: none;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mode-btn i{
+    font-size: 1.4rem;
+}
+
+.active{
+    display: flex;
+}
+
+.search-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--containerBg);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.388);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+input{
+    position: relative;
+    width: 85%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: var(--containerBg);
+    color: var(--text);
+}
+
+input::placeholder{
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.search-btn{
+    border: none;
+    width: 12rem;
+    height: 3.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0079FF;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.search-btn:hover{
+    background-color: #60ABFF;
+}
+
+.search-section i{
+    font-size: 1.5rem; color: #0079FF;
+}
+
+.user-section{
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    background-color: var(--containerBg);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.388);
+}
+
+.user-image{
+    width: 22%;
+}
+.avatar{
+    border-radius: 50%;
+}
+
+.user-info{
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text2);
+}
+
+.profile-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.name{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.username{
+    font-size: 1.2rem;
+    align-self: flex-start;
+    text-decoration: none;
+    margin-bottom: 18px;
+}
+
+.bio{
+    align-self: flex-start;
+    margin-bottom: 20px;
+    color: var(--text2);
+}
+
+.data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin-bottom: 20px;
+    background-color: var(--repoSection);
+    border-radius: 7px;
+}
+
+.data-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile-info{
+    padding: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+}
+
+.profile-info i{
+    font-size: 1.4rem;
+}
+
+.profile-card{
+    display: flex;
+    gap: 10px;
+}
+
+.repo, .followers, .following{
+    font-size: 1.5rem;
+    color: var(--text2);
+}

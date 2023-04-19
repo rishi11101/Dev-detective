@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="header">
+
+                <h1>DevDetective</h1>
+
+                <button class="mode-btn">
+                    <div class="light">
+                        <p>Light</p>
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <div class="dark active">
+                        <p>Dark</p>
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                </button>
+            </div>
+
+            <form class="search-section">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search-bar" placeholder="Enter GitHub username...">
+                <button type="submit" class="search-btn">Search</button>
+
+            </form>
+
+            <div class="user-section">
+                
+                <div class="user-image">
+                    <img class="avatar" src height="130px" width="130px">
+                </div>
+
+                <div class="user-info">
+
+                    <div class="profile-header">
+                        <p class="name"></p>
+                        <p class="date"></p>
+                    </div>
+
+                    <a class="username" href="" target="_blank"></a>
+
+                    <p class="bio"></p>
+
+                    <div class="data">
+                        <div class="data-card">
+                            <p>Repos</p>
+                            <p class="repo">0</p>
+                        </div>
+                        <div class="data-card">
+                            <p>Followers</p>
+                            <p class="followers">0</p>
+                        </div>
+                        <div class="data-card">
+                            <p>Following</p>
+                            <p class="following">0</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-info">
+
+                        <div class="profile-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="place"></p>
+                        </div>
+
+                        <div class="profile-card">
+                            <i class="fa-solid fa-link"></i>
+                            <a class="website" target="_blank"><p class="website"></p></a>
+                        </div>
+                        
+                        <div class="profile-card">
+                            <i class="fa-brands fa-twitter"></i>
+                            <a class="twitter" target="_blank"><p class="twitter"></p></a>
+                        </div>
+                        
+                        <div class="profile-card">
+                            <i class="fa-solid fa-building"></i>
+                            <p class="company"></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/d997726a4c.js" crossorigin="anonymous"></script>
+</body>
+</html>

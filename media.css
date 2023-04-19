@@ -1,0 +1,95 @@
+@media screen and (max-width:700px) {
+
+    .container{
+        width: 90vw;
+        margin-bottom: 3rem;
+    }
+
+    .header{
+        margin-top: 4rem;
+    }
+
+    h1{
+        font-size: 1.4rem;
+    }
+    .light, .dark, .mode-btn i{
+        font-size: 1rem;
+    }
+
+    input{
+        font-size: 0.9rem;
+    }
+    input::placeholder{
+        font-size: 0.8rem;
+    }
+    .search-section i{
+        font-size: 1rem;
+    }
+
+    .search-btn{
+        width: 6rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .user-section{
+        flex-direction: column;
+    }
+    .user-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-info{
+        width: 100%;
+    }
+
+    .profile-header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    .name{
+        font-size: 1.4rem;
+    }
+    .username{
+        font-size: 1rem;
+        margin-top: -5px;
+    }
+
+    .bio{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .data{
+        gap: 1.1rem;
+    }
+
+    .data-card{
+        font-size: 0.8rem;
+    }
+
+    .profile-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .profile-card{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+@media screen and (min-width:1000px) and (max-width:1480px){
+    .user-section{
+        flex-direction: column;
+        width: 100%;
+    }
+    .user-info{
+        width: 100%;
+    }
+}
